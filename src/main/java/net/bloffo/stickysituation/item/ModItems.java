@@ -11,6 +11,7 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
+public class ModItems {
     public static final Item FANCY_STICK = registerItem("fancy_stick");
     public static final Item BIG_STICK = registerItem("big_stick");
     public static final Item BIGGER_STICK = registerItem("bigger_stick");
@@ -20,8 +21,7 @@ public class ModItems {
     private static Item registerItem(String name) {
         Identifier id = Identifier.of(StickySituation.MOD_ID, name);
         RegistryKey<Item> key = RegistryKey.of(RegistryKeys.ITEM, id);
-        Item.Settings settings = new Item.Settings().registryKey(key);
-        return Registry.register(Registries.ITEM, key, new Item(settings));
+        return Registry.register(Registries.ITEM, key, new Item(new Item.Settings().registryKey(key)));
     }
 
     public static void registerModItems() {
