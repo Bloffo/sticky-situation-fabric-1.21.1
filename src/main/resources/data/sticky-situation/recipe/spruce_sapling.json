@@ -1,16 +1,11 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "category": "ingredients",
+  "category": "misc",
   "ingredients": [
-    {
-      "item": "sticky-situation:biggest_stick"
-    },
-    {
-      "item": "minecraft:spruce_leaves"
-    }
+    "sticky-situation:biggest_stick",
+    "minecraft:spruce_leaves"
   ],
   "result": {
-    "count": 1,
     "id": "minecraft:spruce_sapling"
   }
 }

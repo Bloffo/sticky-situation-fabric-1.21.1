@@ -1,16 +1,11 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "category": "ingredients",
+  "category": "misc",
   "ingredients": [
-    {
-      "item": "minecraft:stick"
-    },
-    {
-      "item": "minecraft:stick"
-    }
+    "minecraft:stick",
+    "minecraft:stick"
   ],
   "result": {
-    "count": 1,
     "id": "sticky-situation:fancy_stick"
   }
 }

@@ -6,18 +6,24 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    public static final Item FANCY_STICK =registerItem("fancy_stick", new Item(new Item.Settings()));
-    public static final Item BIG_STICK =registerItem("big_stick", new Item(new Item.Settings()));
-    public static final Item BIGGER_STICK =registerItem("bigger_stick", new Item(new Item.Settings()));
-    public static final Item EVEN_BIGGER_STICK =registerItem("even_bigger_stick", new Item(new Item.Settings()));
-    public static final Item BIGGEST_STICK =registerItem("biggest_stick", new Item(new Item.Settings()));
+    public static final Item FANCY_STICK = registerItem("fancy_stick");
+    public static final Item BIG_STICK = registerItem("big_stick");
+    public static final Item BIGGER_STICK = registerItem("bigger_stick");
+    public static final Item EVEN_BIGGER_STICK = registerItem("even_bigger_stick");
+    public static final Item BIGGEST_STICK = registerItem("biggest_stick");
 
-    private static Item registerItem(String name, Item item) {
-        return Registry.register(Registries.ITEM, Identifier.of(StickySituation.MOD_ID, name), item);
+    private static Item registerItem(String name) {
+        Identifier id = Identifier.of(StickySituation.MOD_ID, name);
+        RegistryKey<Item> key = RegistryKey.of(RegistryKeys.ITEM, id);
+        Item.Settings settings = new Item.Settings().registryKey(key);
+        return Registry.register(Registries.ITEM, key, new Item(settings));
     }
+
     public static void registerModItems() {
         StickySituation.LOGGER.info("Registering mod items for " + StickySituation.MOD_ID);
 
