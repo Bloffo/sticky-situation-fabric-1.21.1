@@ -1,11 +1,16 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "category": "misc",
+  "category": "ingredients",
   "ingredients": [
-    "sticky-situation:biggest_stick",
-    "minecraft:cherry_leaves"
+    {
+      "item": "sticky-situation:biggest_stick"
+    },
+    {
+      "item": "minecraft:cherry_leaves"
+    }
   ],
   "result": {
+    "count": 1,
     "id": "minecraft:cherry_sapling"
   }
 }
