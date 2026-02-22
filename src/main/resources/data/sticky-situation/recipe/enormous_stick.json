@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "category": "ingredients",
   "ingredients": [
-    "sticky-situation:biggest_stick",
-    "minecraft:jungle_leaves"
+    "sticky-situation:giant_stick",
+    "sticky-situation:giant_stick"
   ],
   "result": {
     "count": 1,
-    "id": "minecraft:jungle_sapling"
+    "id": "sticky-situation:enormous_stick"
   }
 }

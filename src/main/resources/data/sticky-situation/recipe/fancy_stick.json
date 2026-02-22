@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "ingredients",
   "ingredients": [
-    {
-      "item": "minecraft:stick"
-    },
-    {
-      "item": "minecraft:stick"
-    }
+    "minecraft:stick",
+    "minecraft:stick"
   ],
   "result": {
     "count": 1,
