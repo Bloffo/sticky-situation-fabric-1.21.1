@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "ingredients",
   "ingredients": [
-    {
-      "item": "sticky-situation:biggest_stick"
-    },
-    {
-      "item": "minecraft:oak_leaves"
-    }
+    "sticky-situation:biggest_stick",
+    "minecraft:oak_leaves"
   ],
   "result": {
     "count": 1,
